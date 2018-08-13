@@ -1,5 +1,5 @@
-const initialState = {
-    articles: []
-  };
-  const rootReducer = (state = initialState, action) => state;
-  export default rootReducer;
+export { default as config } from './configReducer';
+export { default as bruker } from './brukerReducer';
+
+//Denne må ligge nederst i filen
+export { default } from './rootReducer';
